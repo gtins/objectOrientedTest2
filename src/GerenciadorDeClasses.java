@@ -4,28 +4,23 @@ public class GerenciadorDeClasses {
 
     public void addContato(int numero, String nome) {
         contatos.put(numero, nome);
-        System.out.println(contatos.values());
     }
 
     public void remContato(int numero) {
         contatos.remove(numero);
     }
 
-    public void lista() {
-        System.out.println("cu:");
-        for (Integer chave : lista();) {
-            System.out.println(chave);
+    public void showContatos() {
+        for (String nome : contatos.values()) {
+            System.out.println(nome);
         }
-        for (String valor : contatos.values()) {
-            System.out.println(valor);
-
-//        System.out.println("Valores do HashMap:");
-//        var lista = contatos.values();
-//        for (lista : contatos.values()) {
-//            System.out.println(lista);
-//        }
+    }
+    public int searchContato(String nome) {
+        for (int numero : contatos.keySet()) {
+            if (contatos.get(numero).equals(nome)) {
+                return numero;
+            }
         }
-
-
+        return -404;
     }
 }
