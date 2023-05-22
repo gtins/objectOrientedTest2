@@ -6,9 +6,15 @@ public class GerenciadorDeClasses {
         contatos.put(numero, nome);
     }
 
-    public void remContato(int numero) {
-        contatos.remove(numero);
+    public void remContato(String nome){
+        for (HashMap.Entry<Integer, String> entry : contatos.entrySet()) { //para a entrada do hashmap, que recebe intger e string, para cada entryset de contatos...
+            if (entry.getValue().equals(nome)) {//se o valor da entrada equivaler ao nome (parametro do metodo)...
+                contatos.remove(entry.getKey());//remove
+                break; //fim do loop
+            }
+        }
     }
+
 
     public void showContatos() {
         for (String nome : contatos.values()) {
