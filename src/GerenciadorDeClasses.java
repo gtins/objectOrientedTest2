@@ -1,5 +1,6 @@
 import java.io.*;
 import java.util.HashMap;
+import java.util.Map;
 
 public class GerenciadorDeClasses {
     HashMap<Integer, String> contatos = new HashMap<>();
@@ -20,8 +21,12 @@ public class GerenciadorDeClasses {
         }
     }
     public void showContatos() {
-        for (String nome : contatos.values()) {
-            System.out.println(nome);
+        for (Map.Entry<Integer, String> contato : contatos.entrySet()) {
+            int numMapa = contato.getKey();
+            String nomeMapa = contato.getValue();
+
+            System.out.println(nomeMapa + " - " + numMapa);
+
         }
     }
     public int searchContato(String nome) {
