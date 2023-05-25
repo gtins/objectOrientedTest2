@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ca49d9c-74dd-4f17-a9a4-38067ed1a834" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Empresa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GerenciadorDeClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GerenciadorDeClasses.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +56,8 @@
       <workItem from="1684699903697" duration="3410000" />
       <workItem from="1684792496969" duration="699000" />
       <workItem from="1684804083243" duration="5458000" />
-      <workItem from="1684893393086" duration="3300000" />
+      <workItem from="1684893393086" duration="3956000" />
+      <workItem from="1684979120138" duration="2275000" />
     </task>
     <task id="LOCAL-00001" summary="90%">
       <created>1684810283211</created>
@@ -65,7 +66,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684810283211</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="scanner">
+      <created>1684896978558</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684896978559</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -73,6 +81,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="90%" />
-    <option name="LAST_COMMIT_MESSAGE" value="90%" />
+    <MESSAGE value="scanner" />
+    <option name="LAST_COMMIT_MESSAGE" value="scanner" />
   </component>
 </project>

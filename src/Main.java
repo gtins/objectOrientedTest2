@@ -4,6 +4,7 @@ public class Main {
 
         Scanner myObj = new Scanner(System.in);
         GerenciadorDeClasses aplicativo = new GerenciadorDeClasses();
+        Empresa empresarial = new Empresa();
 
         for (int i = 0; i < 4; i++) {
             System.out.println("Digite o nome do contato: ");
@@ -60,5 +61,10 @@ public class Main {
         } else {
             System.out.println("Contato não encontrado: Glauco");
         }
+
+        System.out.println("-----------------------");
+
+        empresarial.addContato(8,"jorge");
     }
 }
+
