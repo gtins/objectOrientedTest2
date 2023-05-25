@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ca49d9c-74dd-4f17-a9a4-38067ed1a834" name="Changes" comment="99%">
+    <list default="true" id="5ca49d9c-74dd-4f17-a9a4-38067ed1a834" name="Changes" comment="100%">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Empresa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GerenciadorDeClasses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GerenciadorDeClasses.java" afterDir="false" />
@@ -81,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685053873225</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="100%">
+      <created>1685055122815</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685055122815</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,6 +98,7 @@
     <MESSAGE value="90%" />
     <MESSAGE value="scanner" />
     <MESSAGE value="99%" />
-    <option name="LAST_COMMIT_MESSAGE" value="99%" />
+    <MESSAGE value="100%" />
+    <option name="LAST_COMMIT_MESSAGE" value="100%" />
   </component>
 </project>

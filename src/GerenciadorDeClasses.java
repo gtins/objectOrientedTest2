@@ -34,10 +34,12 @@ public class GerenciadorDeClasses {
     public int searchContato(String nome) {
         for (int numero : contatos.keySet()) {
             if (contatos.get(numero).equals(nome)) {
+                System.out.println("Contato de :" +nome+ ": "+ numero);
                 return numero;
             }
         }
-        return -404;
+        System.out.println("Contato não encontrado: "+ nome);
+        return 404;
     }
 
     public void gravar(String arquivo){
