@@ -12,38 +12,20 @@ public class Main {
             System.out.println("Digite o número do contato: ");
             int ctNumero = Integer.parseInt(myObj.nextLine());
 
-            System.out.println("-----------------------");
-
             aplicativo.addContato(ctNumero, ctNome);
         }
-//        aplicativo.addContato(88887777,"Gustavo");
-//        aplicativo.addContato(77776666,"Ícaro");
-//        aplicativo.addContato(66665555,"Glauco");
-
-        System.out.println("-----------------------");
-
+//--------------------------------------------
         aplicativo.remContato("João");
-
-        System.out.println("-----------------------");
-
+//--------------------------------------------
         aplicativo.gravar("agenda");
         aplicativo.contatos.clear();
         aplicativo.leitura("agenda");
-
-        System.out.println("-----------------------");
-
-        System.out.println("Listando contatos...");
-        System.out.println("Contatos:");
+//--------------------------------------------
         aplicativo.showContatos();
-
-        System.out.println("-----------------------");
-        System.out.println("Lendo contatos salvos no disco...");
-        System.out.println("Contatos:");
+//--------------------------------------------
         String contatosTexto = aplicativo.parseTexto();
         System.out.println(contatosTexto);
-
-        System.out.println("-----------------------");
-
+//--------------------------------------------
         int numeroJoao = aplicativo.searchContato("João");
         System.out.println("Buscando contato...");
 
@@ -61,10 +43,17 @@ public class Main {
         } else {
             System.out.println("Contato não encontrado: Glauco");
         }
+//class verificaçao
 
         System.out.println("-----------------------");
 
-        empresarial.addContato(8,"jorge");
+        System.out.println("Digite o nome do contato empresarial: ");
+        String emNome = myObj.nextLine();
+        System.out.println("Digite o número do contato empresarial: ");
+        int emNumero = Integer.parseInt(myObj.nextLine());
+//class empresa
+        empresarial.addContato(emNumero,emNome);
+        empresarial.showContatos();
     }
 }
 

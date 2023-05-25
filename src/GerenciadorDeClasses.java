@@ -11,16 +11,20 @@ public class GerenciadorDeClasses {
     }
 
     public void remContato(String nome){
+        System.out.println("-----------------------");
         System.out.println("Removendo Contato...");
         for (HashMap.Entry<Integer, String> entry : contatos.entrySet()) { //para a entrada do hashmap, que recebe intger e string, para cada entryset de contatos...
             if (entry.getValue().equals(nome)) {//se o valor da entrada equivaler ao nome (parametro do metodo)...
                 contatos.remove(entry.getKey());//remove
                 System.out.println("Contato Removido: " + nome);
+                System.out.println("-----------------------");
                 break; //fim do loop
             }
         }
     }
     public void showContatos() {
+        System.out.println("Listando contatos...");
+        System.out.println("Contatos:");
         for (Map.Entry<Integer, String> contato : contatos.entrySet()) {
             int numMapa = contato.getKey();
             String nomeMapa = contato.getValue();
@@ -47,6 +51,7 @@ public class GerenciadorDeClasses {
             saida.writeObject(contatos);
 
             System.out.println("Contatos gravados em: " + arquivo);
+            System.out.println("-----------------------");
         } catch (IOException e) {
             System.out.println("Erro: " + e.getMessage());
         }
@@ -62,6 +67,7 @@ public class GerenciadorDeClasses {
 
             System.out.println("Contatos lidos de: " + arquivo);
             parseTexto();
+            System.out.println("-----------------------");
         } catch (FileNotFoundException e) {
             System.out.println("Arquivo não encontrado: " + e.getMessage());
         } catch (IOException | ClassNotFoundException e) {
@@ -70,6 +76,9 @@ public class GerenciadorDeClasses {
     }
 
     public String parseTexto() {
+
+        System.out.println("Lendo contatos salvos no disco...");
+        System.out.println("Contatos:");
 
         StringBuilder text = new StringBuilder();
 
