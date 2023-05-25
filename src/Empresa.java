@@ -20,7 +20,7 @@ public class Empresa extends GerenciadorDeClasses{
 
             String formatado = horAdd.format(formatacao);
 
-            System.out.println("Data adicionado - " + nomeMapa + " - " + numMapa + " - " + formatado);
+            System.out.println("Data adicionado - " + formatado);
 
         }
     }
