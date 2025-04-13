@@ -1,8 +1,44 @@
-# N2PO
-Trabalho feito em dupla com Ícaro Botelho.
+# Agenda de Contatos com Persistência em Java
 
-O código que montamos tem como base o uso de um Hashmap combinado com a classe scanner do Java para adicionar contatos no Hashmap, sendo os seus nomes o valor e seus números a chave.
+Este repositório contém um projeto desenvolvido em Java que implementa uma agenda de contatos utilizando estruturas de dados e manipulação de arquivos. O sistema permite adicionar, remover, listar e procurar contatos, além de persistir os dados em disco para garantir a continuidade das informações.
 
-A classe GerenciadorDeClasses é responsável por todas as operações que envolvem manipulação de contatos, como remover, adicionar, listar, procurar e gravação ou leitura em disco. Este código conta com o recurso FileOutputStream, que grava as informações do Hashmap em um arquivo gerado pelo próprio programa, o arquivo "agenda". As operações de gravação e leitura em disco possuem cada uma um try e catch, sendo o catch responsável por uma exception.
+---
 
-Além disso, o código também conta com uma subclasse Empresa, que herda da classe pai GerenciadorDeClasses, e ela é responsável por adicionar contatos empresariais, utilizando o mesmo método presente na classe pai, porém com algumas alterações, como a adição do termo "Empresa:" antes do nome do contato, e também a data em que o mesmo foi adicionado, obtida utilizando as ferramentas presentes no java.time. Utilizando a herança e polimorfismo, não foi necessário implementar uma classe totalmente diferente para fazer algo que já existia no programa.
+## Objetivo do Projeto
+
+- Implementar uma agenda de contatos utilizando **HashMap** para armazenar os dados.
+- Utilizar a classe **Scanner** para entrada de dados pelo usuário.
+- Persistir os dados em disco utilizando **FileOutputStream**.
+- Aplicar conceitos de **Programação Orientada a Objetos (POO)** em Java.
+- Criar uma subclasse **Empresa** para gerenciar contatos empresariais.&#8203;:contentReference[oaicite:2]{index=2}
+
+---
+
+## Tecnologias Utilizadas
+
+- **Java SE**
+- **IDE**: IntelliJ IDEA
+- **Estruturas de Dados**: HashMap
+- **Manipulação de Arquivos**: FileOutputStream
+- **Entrada de Dados**: Scanner
+
+---
+
+## Funcionalidades Implementadas
+
+- Adicionar Contato: Permite ao usuário adicionar um novo contato à agenda.
+
+- Remover Contato: Remove um contato existente da agenda.
+
+- Listar Contatos: Exibe todos os contatos armazenados na agenda.
+
+- Procurar Contato: Busca por um contato específico na agenda.
+
+- Persistência em Disco: Utiliza FileOutputStream para gravar os dados em um arquivo chamado "agenda".
+
+- Subclasse Empresa: A classe Empresa herda de GerenciadorDeClasses e permite o gerenciamento de contatos empresariais, adicionando o prefixo "Empresa:" ao nome e a data de inclusão.
+
+## Autores
+Gustavo Henrique Martins
+
+Ícaro Botelho
